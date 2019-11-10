@@ -1,0 +1,44 @@
+<resources>
+    <!-- Slider  -->
+    <dimen name="dots_height">@dimen/_30sdp</dimen>
+    <dimen name="dots_margin_bottom">@dimen/_35sdp</dimen>
+    <dimen name="img_width_height">@dimen/_120sdp</dimen>
+
+
+
+    <!--Font Size -->
+    <dimen name="font_extra_small">@dimen/_9ssp</dimen>
+    <dimen name="font_small">@dimen/_11ssp</dimen>
+    <dimen name="font_normal">@dimen/_12ssp</dimen>
+    <dimen name="font_large">@dimen/_14ssp</dimen>
+    <dimen name="font_extra_large">@dimen/_15ssp</dimen>
+    <dimen name="font_title">@dimen/_20sdp</dimen>
+    <dimen name="font_extra_title">@dimen/_25sdp</dimen>
+
+
+    <dimen name="font_size_8">@dimen/_8sdp</dimen>
+    <dimen name="font_size_9">@dimen/_9sdp</dimen>
+
+    <dimen name="font_size_10">@dimen/_10sdp</dimen>
+    <dimen name="font_size_11">@dimen/_11sdp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_14">@dimen/_14ssp</dimen>
+    <dimen name="font_size_15">15sp</dimen>
+    <dimen name="font_size_15_">15.5sp</dimen>
+    <dimen name="font_size_16">@dimen/_16ssp</dimen>
+    <dimen name="font_size_17">@dimen/_17ssp</dimen>
+    <dimen name="font_size_18">18sp</dimen>
+    <dimen name="font_size_20">@dimen/_20sdp</dimen>
+    <dimen name="font_size_22">@dimen/_22sdp</dimen>
+    <dimen name="font_size_24">@dimen/_24sdp</dimen>
+    <dimen name="font_size_26">@dimen/_26sdp</dimen>
+    <dimen name="font_size_28">28sp</dimen>
+    <dimen name="font_size_30">30sp</dimen>
+    <dimen name="font_size_32">32sp</dimen>
+    <dimen name="font_size_34">34sp</dimen>
+    <dimen name="font_size_36">36sp</dimen>
+    <dimen name="font_size_38">38sp</dimen>
+    <dimen name="font_size_40">40sp</dimen>
+
+
+</resources>

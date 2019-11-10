@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1019940082624",
+    "firebase_url": "https://activityhub-c5d71.firebaseio.com",
+    "project_id": "activityhub-c5d71",
+    "storage_bucket": "activityhub-c5d71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019940082624:android:e51194611db137ee",
+        "android_client_info": {
+          "package_name": "com.activityhub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUjMZeLtTXJdNkWUgfr5s78_hycSWIq2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019940082624-99dppsrdqhkks6q17p8l41ivbhhph2rg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1019940082624-fsmd10m2vbhh0a0n363huff2ge5vh7rl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.clinicalscience.Activityhub"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

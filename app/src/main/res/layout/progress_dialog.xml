@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/colorTextMangeDevices"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <ImageView android:layout_width="@dimen/_42sdp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_white"
+        android:layout_height="@dimen/_42sdp"
+        android:contentDescription="@string/todo"/>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_white"
+        android:indeterminateTint="@color/colorAccent"
+        android:padding="@dimen/_10sdp" />
+
+    <com.activityhub.utils.adv_progress.CircularProgressBar
+        android:id="@+id/mProgressbar"
+        android:layout_width="@dimen/_34sdp"
+        android:layout_height="@dimen/_34sdp"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/_10sdp"
+        app:foregroundStrokeCap="round"
+        app:animateProgress="true"
+        app:foregroundStrokeColor="@color/colorAccent"
+        app:foregroundStrokeWidth="@dimen/_2sdp"
+        app:indeterminate="true"/>
+
+</RelativeLayout>

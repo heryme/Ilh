@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@drawable/ic_splash"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_35sdp"
+        tools:ignore="RtlSymmetry">
+
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_svg_white_calendar" />
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:text="@string/calender"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal"
+            app:setTypeFace="@string/font_regular" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_4sdp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/light_blue"
+        android:textSize="@dimen/_11sdp"
+        tools:text="April 2019" />
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/cooardinator_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="true"
+            android:visibility="visible"
+            app:layout_behavior="@string/calendar_behavior"
+            app:mcv_calendarMode="month" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EEEEEE"
+            app:layout_behavior="@string/calendar_scrolling_behavior"
+            tools:listitem="@layout/row_item_calendar_event" />
+
+        &lt;!&ndash;  <com.southernbox.nestedcalendar.view.WeekTitleView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#fafafa" />
+&ndash;&gt;
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>-->
+
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_behavior="@string/calendar_behavior"
+        app:mcv_calendarMode="month" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_calendar_event"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FDFDFD"
+        android:visibility="visible"
+        app:layout_behavior="@string/calendar_scrolling_behavior"
+        tools:listitem="@layout/row_item_calendar_event" />
+
+
+    <LinearLayout
+        android:id="@+id/item_not_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:id="@+id/text_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/event_not_found"
+            app:setTypeFace="@string/font_semibold" />
+
+    </LinearLayout>
+
+    <com.southernbox.nestedcalendar.view.WeekTitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" />
+
+</android.support.design.widget.CoordinatorLayout>

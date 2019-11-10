@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_dialog"
+    android:orientation="vertical"
+    android:padding="@dimen/_15sdp">
+
+    <com.activityhub.utils.other.MyCustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/weight"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_normal"
+        app:setTypeFace="@string/font_regular" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <biz.kasual.materialnumberpicker.MaterialNumberPicker
+                android:id="@+id/pickerDialogWeightSt"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:npDefaultValue="5"
+                app:npMaxValue="16"
+                app:npMinValue="5"
+                app:npSeparatorColor="@color/black"
+                app:npTextColor="@color/black"
+                app:npTextSize="25sp" />
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/tvDialogPickerLabelSt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/st"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small"
+                app:setTypeFace="@string/font_regular" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <biz.kasual.materialnumberpicker.MaterialNumberPicker
+                android:id="@+id/pickerDialogWeightLb"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:npDefaultValue="0"
+                app:npMaxValue="13"
+                app:npMinValue="0"
+                app:npSeparatorColor="@color/black"
+                app:npTextColor="@color/black"
+                app:npTextSize="25sp" />
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/tvDialogPickerLabeLb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lb"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:setTypeFace="@string/font_regular" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:id="@+id/tvDialogWeightCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/cancel"
+            android:textColor="@color/btn_color"
+            app:setTypeFace="@string/font_regular" />
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:id="@+id/tvDialogWeightOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/ok"
+            android:textColor="@color/btn_color"
+            app:setTypeFace="@string/font_regular" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

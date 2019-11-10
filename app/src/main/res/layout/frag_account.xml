@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccSetting"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_220sdp"
+        android:layout_weight="0.6"
+        android:background="@drawable/ic_splash"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/ivYourAccountFragmentProfile"
+                style="@style/circle_selector"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:src="@drawable/ic_profile"
+                app:civ_border="true"
+                app:civ_border_color="@color/white_alpha_10"
+                app:civ_border_width="0.04dp"
+                app:civ_shadow="false"
+                app:civ_shadow_radius="1" />
+
+            <com.activityhub.utils.adv_progress.CircularProgressBar
+                android:id="@+id/progress_profile"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                app:foregroundStrokeCap="round"
+                android:visibility="gone"
+                app:animateProgress="true"
+                app:foregroundStrokeColor="@color/colorAccent"
+                app:foregroundStrokeWidth="@dimen/_2sdp"
+                app:indeterminate="true"
+                android:layout_marginTop="@dimen/_42sdp"
+                android:gravity="center" />
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/tvYourAccountFragmentNames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivYourAccountFragmentProfile"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16"
+                app:setTypeFace="@string/font_semibold"
+                tools:text="Boj jones" />
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/tvYourAccountFragmentEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvYourAccountFragmentNames"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_12"
+                app:setTypeFace="@string/font_regular"
+                tools:text="bob.@gmail.com" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccSetting"
+                android:orientation="vertical">
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@color/colorAccSetting"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="@string/account_settings"
+                    android:textColor="#2E2E2E"
+                    app:setTypeFace="@string/font_regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#F5F2F2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_white_square"
+                android:orientation="vertical">
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:text="@string/username"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_small"
+                    app:setTypeFace="@string/font_semibold"
+                    tools:ignore="RtlSymmetry" />
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:id="@+id/tvYourAccountFragmentAccUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@color/white"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textColor="@color/colorTextAccount"
+                    android:textSize="@dimen/font_small"
+                    app:setTypeFace="@string/font_regular"
+                    tools:ignore="RtlSymmetry"
+                    tools:text="Bob jones" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#F5F2F2" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/llYourAccountFragmentEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_white_square"
+                android:orientation="vertical">
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:id="@+id/text_email_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:drawableTint="@color/btn_color"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_30sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="@string/email_address"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_small"
+                    app:setTypeFace="@string/font_semibold"
+                    tools:ignore="RtlHardcoded"
+                    tools:targetApi="m" />
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:id="@+id/tvYourAccountFragmentAccEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_email_hint"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:textColor="@color/colorTextAccount"
+                    android:textSize="@dimen/font_small"
+                    app:setTypeFace="@string/font_regular"
+                    tools:ignore="RtlSymmetry"
+                    tools:text="bob@uot.com" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_below="@+id/tvYourAccountFragmentAccEmailAddress"
+                    android:background="#F5F2F2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="@dimen/_31sdp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_right_arrow"
+                    android:tint="@color/btn_color" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llYourAccountFragmentResetPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_white_square"
+                android:orientation="vertical">
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:drawableRight="@drawable/ic_right_arrow"
+                    android:drawableTint="@color/btn_color"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_30sdp"
+                    android:paddingBottom="@dimen/_16sdp"
+                    android:text="@string/reset_pwd"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_small"
+                    app:setTypeFace="@string/font_semibold"
+                    tools:targetApi="m" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#F5F2F2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llYourAccountFragmentService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_white_square"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:drawableRight="@drawable/ic_right_arrow"
+                    android:drawableTint="@color/btn_color"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_30sdp"
+                    android:paddingBottom="@dimen/_16sdp"
+                    android:text="@string/sync"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_small"
+                    app:setTypeFace="@string/font_semibold"
+                    tools:targetApi="m" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#F5F2F2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llYourAccountFragmentNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_white_square"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:drawableRight="@drawable/ic_right_arrow"
+                    android:drawableTint="@color/btn_color"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_30sdp"
+                    android:paddingBottom="@dimen/_16sdp"
+                    android:text="@string/notification"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_small"
+                    app:setTypeFace="@string/font_semibold"
+                    tools:targetApi="m" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#F5F2F2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccSetting"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_35sdp"
+                android:paddingEnd="@dimen/_30sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:visibility="visible"
+                tools:ignore="RtlSymmetry">
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:drawableTint="@color/btn_color"
+                    android:text="@string/preferences"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_small"
+                    app:setTypeFace="@string/font_regular"
+                    tools:ignore="UnusedAttribute" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#F5F2F2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_white_square"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:text="@string/units_of_measurement"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_small"
+                    app:setTypeFace="@string/font_semibold"
+                    tools:ignore="RtlSymmetry" />
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@color/white"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="@string/kilometers"
+                    android:textColor="@color/colorTextAccount"
+                    android:textSize="@dimen/font_small"
+                    app:setTypeFace="@string/font_regular"
+                    tools:ignore="RtlSymmetry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#F5F2F2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccSetting"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_35sdp"
+                android:paddingEnd="@dimen/_30sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:visibility="visible"
+                tools:ignore="RtlSymmetry">
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:drawableTint="@color/btn_color"
+                    android:text="@string/your_details"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_small"
+                    app:setTypeFace="@string/font_regular"
+                    tools:ignore="UnusedAttribute" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#F5F2F2" />
+
+            <LinearLayout
+                android:id="@+id/llYourAccountFragmentYourFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_white_square"
+                android:orientation="vertical">
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:drawableRight="@drawable/ic_right_arrow"
+                    android:drawableTint="@color/btn_color"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_30sdp"
+                    android:paddingBottom="@dimen/_16sdp"
+                    android:text="@string/yourProfile"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_small"
+                    app:setTypeFace="@string/font_semibold"
+                    tools:targetApi="m" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#F5F2F2" />
+
+            </LinearLayout>
+
+            <com.activityhub.utils.other.MyCustomButton
+                android:id="@+id/btnYourAccountFragmentLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/bg_button_blue_square"
+                android:stateListAnimator="@null"
+                android:text="@string/logout"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textStyle="bold"
+                app:setTypeFace="@string/font_regular" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

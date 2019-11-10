@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/layout_education"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_106sdp"
+        android:background="@drawable/ic_splash"
+        android:gravity="center|start"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_35sdp"
+        android:paddingTop="@dimen/_4sdp"
+        tools:ignore="RtlSymmetry,UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_svg_white_calendar" />
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text="@string/education"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_large"
+                app:setTypeFace="@string/font_regular" />
+
+        </LinearLayout>
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_48sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:text="@string/education_desc"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_extra_small"
+            app:setTypeFace="@string/font_regular" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_education_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_education"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:scrollbarSize="0dp"
+        android:scrollbars="none"
+        tools:listitem="@layout/item_education_category" />
+
+
+</RelativeLayout>

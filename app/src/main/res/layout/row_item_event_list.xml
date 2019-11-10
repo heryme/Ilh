@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_event_directory"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_25sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_25sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@drawable/bg_white_square_border"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:id="@+id/tvRowItemEventListPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:gravity="end"
+            android:text="Free"
+            android:textAllCaps="true"
+            android:textColor="#6ECCC2"
+            android:textSize="@dimen/font_size_10"
+            app:setTypeFace="@string/font_semibold" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_20sdp">
+
+            <ImageView
+                android:id="@+id/ivRowItemEventListEvent"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_shoes_green" />
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/tvRowItemEventListCategoryName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:textColor="@color/black"
+                app:setTypeFace="@string/font_semibold"
+                tools:text="Local Walking group" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll"
+            android:orientation="vertical">
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/tvRowItemEventListLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_10"
+                app:setTypeFace="@string/font_regular"
+                tools:text="Mandy Leisure center,Mandy,Cardiff,CF23 8NH " />
+
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/tvRowItemEventListDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_10"
+                app:setTypeFace="@string/font_regular"
+                tools:text="Tuesday 14 December | 7pm-8pm" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

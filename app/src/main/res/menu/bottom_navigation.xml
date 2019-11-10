@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/nav_directory"
+        android:icon="@drawable/ic_directory_grey"
+        android:title="@string/directory" />
+
+    <item
+        android:id="@+id/nav_calender"
+        android:icon="@drawable/ic_calendar"
+        android:title="@string/calender" />
+
+    <item
+        android:id="@+id/nav_goals"
+        android:icon="@drawable/ic_result"
+        android:title="@string/result" />
+
+</menu>

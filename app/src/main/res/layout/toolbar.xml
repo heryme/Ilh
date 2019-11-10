@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/bgBottomNavigation"
+        android:elevation="1px">
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:id="@+id/tvbarHomeActivityToolbarTitle"
+            android:layout_width="@dimen/_128sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_activityhub_green"
+            android:gravity="center"
+            android:textColor="#1FA38F"
+            android:textSize="@dimen/font_size_22"
+            app:setTypeFace="@string/font_light" />
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:id="@+id/tvbarHomeActivityToolbarLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColor="#1FA38F"
+            android:textSize="@dimen/font_size_14"
+            android:visibility="gone"
+            app:setTypeFace="@string/font_light" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+</android.support.design.widget.CoordinatorLayout>

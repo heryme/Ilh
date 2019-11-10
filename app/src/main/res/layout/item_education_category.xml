@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_education"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/bg_white_square_border"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/image_category"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/todo"
+            android:maxWidth="@dimen/_40sdp"
+            android:maxHeight="@dimen/_36sdp"
+            android:scaleType="fitCenter"
+            android:tint="@color/btn_color"
+            tools:src="@drawable/ic_svg_green_education_new" />
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:id="@+id/text_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_category"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/font_size_10"
+            app:setTypeFace="@string/font_semibold"
+            tools:text="@string/education" />
+
+    </RelativeLayout>
+
+</LinearLayout>

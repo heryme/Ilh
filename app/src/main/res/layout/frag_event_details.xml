@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:background="@color/colorAccSetting"
+    android:scrollbarSize="0dp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_80sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:background="@drawable/ic_splash"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/image_event"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_above="@+id/llEventDetailsFragmentDes"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_white_shoes" />
+
+            <LinearLayout
+                android:id="@+id/llEventDetailsFragmentDes"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_85sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/bg_white_square_border"
+                android:elevation="0.5dp"
+                android:gravity="start|center"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:id="@+id/text_event_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textColor="#176e60"
+                    android:textSize="@dimen/font_normal"
+                    app:setTypeFace="@string/font_regular"
+                    tools:text="Local walking group " />
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:id="@+id/text_event_details"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_12"
+                    app:setTypeFace="@string/font_regular"
+                    tools:text="Getting involved with your local Walking for Health " />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_location"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/bg_white_square_border"
+            android:visibility="visible">
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/text_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_toStartOf="@+id/ivEventDetailsFragmentRight"
+                android:layout_toEndOf="@+id/ivEventDetailsFragmentLocation"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_12"
+                app:setTypeFace="@string/font_regular"
+                tools:text="Mandy" />
+
+            <ImageView
+                android:id="@+id/ivEventDetailsFragmentLocation"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:src="@drawable/ic_black_location" />
+
+            <ImageView
+                android:id="@+id/ivEventDetailsFragmentRight"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:src="@drawable/ic_right_arrow"
+                android:tint="#929292" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_date"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/two_side_border_event_detail"
+            android:visibility="visible">
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_toEndOf="@+id/ivEventDetailsFragmentCalender"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_12"
+                app:setTypeFace="@string/font_regular"
+                tools:text="Mandy" />
+
+            <ImageView
+                android:id="@+id/ivEventDetailsFragmentCalender"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_black_calender" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_call"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/bg_white_square_border"
+            android:visibility="visible">
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/text_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_toStartOf="@+id/ivEventDetailsFragmentCallRight"
+                android:layout_toEndOf="@+id/ivEventDetailsFragmentCall"
+                android:gravity="start"
+                android:maxLines="3"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_12"
+                app:setTypeFace="@string/font_regular"
+                tools:text="Mandy" />
+
+            <ImageView
+                android:id="@+id/ivEventDetailsFragmentCall"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_black_phone" />
+
+            <ImageView
+                android:id="@+id/ivEventDetailsFragmentCallRight"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_right_arrow"
+                android:tint="#929292" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/three_side_border_event_detail"
+            android:visibility="visible">
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/text_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_toStartOf="@+id/ivEventDetailsFragmentEmailRight"
+                android:layout_toEndOf="@+id/ivEventDetailsFragmentEmail"
+                android:gravity="start"
+                android:maxLines="3"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_12"
+                app:setTypeFace="@string/font_regular"
+                tools:text="Mandy" />
+
+            <ImageView
+                android:id="@+id/ivEventDetailsFragmentEmail"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_email" />
+
+            <ImageView
+                android:id="@+id/ivEventDetailsFragmentEmailRight"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_right_arrow"
+                android:tint="#929292" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_website"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/three_side_border_event_detail"
+            android:visibility="visible">
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/text_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_toStartOf="@+id/ivEventDetailsFragmentWebRight"
+                android:layout_toEndOf="@+id/ivEventDetailsFragmentWeb"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_12"
+                app:setTypeFace="@string/font_regular"
+                tools:text="Mandy" />
+
+            <ImageView
+                android:id="@+id/ivEventDetailsFragmentWeb"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_black_web" />
+
+            <ImageView
+                android:id="@+id/ivEventDetailsFragmentWebRight"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_right_arrow"
+                android:tint="#929292" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/bg_white_square_border"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_15sdp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="@string/overview"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_small"
+                    app:setTypeFace="@string/font_regular" />
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:id="@+id/text_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_small"
+                    app:setTypeFace="@string/font_regular"
+                    tools:text="gggg" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="#9A9A9A" />
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/text_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_12"
+                app:setTypeFace="@string/font_regular"
+                tools:text="Walkingfsdjkljdkljkldjklsjdjskljdljskljdskljdljdsljdkljklsjdljsljdljsdljdjsdor " />
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/text_full_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_12"
+                app:setTypeFace="@string/font_regular"
+                tools:text="Tuesday - Thusday " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/bg_white_square_border"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/location"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small"
+                app:setTypeFace="@string/font_regular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="#9A9A9A" />
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_add_to_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.activityhub.utils.other.MyCustomButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="#176E60"
+                android:text="@string/view_event"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:setTypeFace="@string/font_regular" />
+
+            <com.activityhub.utils.other.MyCustomButton
+                android:id="@+id/button_add_to_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_blue_square"
+                android:text="@string/add_to_calender"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:setTypeFace="@string/font_regular" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/bg_white_square_border"
+            android:visibility="visible"
+            android:weightSum="3">
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight=".5"
+                android:gravity="start"
+                android:text="@string/rating"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small"
+                app:setTypeFace="@string/font_regular" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <com.willy.ratingbar.ScaleRatingBar xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/ratingbar_event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srb_clearRatingEnabled="false"
+                    app:srb_clickable="false"
+                    app:srb_drawableEmpty="@drawable/ic_star_grey"
+                    app:srb_drawableFilled="@drawable/ic_star_blue"
+                    app:srb_isIndicator="true"
+                    app:srb_numStars="5"
+                    app:srb_rating="0"
+                    app:srb_scrollable="true"
+                    app:srb_starHeight="@dimen/_12sdp"
+                    app:srb_starPadding="2dp"
+                    app:srb_starWidth="@dimen/_12sdp"
+                    app:srb_stepSize="0.1" />
+
+            </LinearLayout>
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/text_rating"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_weight="1.5"
+                android:gravity="start|center"
+                android:textColor="#b9b9b9"
+                android:textSize="@dimen/_8sdp"
+                app:setTypeFace="@string/font_regular"
+                tools:text="Current Rating 0 of out 5 stars" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

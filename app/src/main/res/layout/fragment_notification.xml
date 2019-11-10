@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_50sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_44sdp"
+                android:background="@drawable/bg_white_square_border"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="@string/allow_notifications"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_normal"
+                    app:setTypeFace="@string/font_regular" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="@dimen/_42sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/switch_on_off"
+                    android:thumb="@null"
+                    app:track="@drawable/switch_on_off" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_square_border"
+                android:orientation="vertical"
+                android:padding="@dimen/_3sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.activityhub.utils.other.MyCustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:text="@string/remind_me_on_a_day"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/font_normal"
+                        app:setTypeFace="@string/font_regular" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:layout_width="@dimen/_42sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:background="@drawable/switch_on_off"
+                        android:thumb="@null"
+                        app:track="@drawable/switch_on_off" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:background="#D4D4D4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.activityhub.utils.other.MyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:text="@string/alarm"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/font_normal"
+                        app:setTypeFace="@string/font_regular" />
+
+                    <com.activityhub.utils.other.MyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_weight="0.5"
+                        android:gravity="end"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/font_normal"
+                        app:setTypeFace="@string/font_regular"
+                        tools:text="Wed,06/03/19, 10:00" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:background="#D4D4D4" />
+
+                <LinearLayout
+                    android:id="@+id/layout_repeat"
+                    style="@style/square_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <com.activityhub.utils.other.MyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:text="@string/repeat"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/font_normal"
+                        app:setTypeFace="@string/font_regular" />
+
+                    <com.activityhub.utils.other.MyCustomTextView
+                        android:id="@+id/tvNever"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_weight="0.5"
+                        android:drawableEnd="@drawable/right_arrow_fix_size"
+                        android:gravity="end|center_vertical"
+                        android:text="@string/never"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/font_normal"
+                        app:setTypeFace="@string/font_regular" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_square_border"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="@string/remind_me_of_location"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_normal"
+                    app:setTypeFace="@string/font_regular" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="@dimen/_42sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/switch_on_off"
+                    android:thumb="@null"
+                    app:track="@drawable/switch_on_off" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

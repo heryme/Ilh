@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_splash"
+    android:fillViewport="true"
+    tools:context=".activity.auth.Act_Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_activityhub_white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_lock" />
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/tvSignInActivityForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/forgot_your_password"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/font_normal"
+                app:setTypeFace="@string/font_semibold" />
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/type_in"
+                android:textColor="@color/color_white"
+                app:setTypeFace="@string/font_regular" />
+
+            <com.activityhub.utils.other.MyCustomEdittext
+                android:id="@+id/etForgotPasswordActivityEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_26sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:autofillHints="@string/email"
+                android:background="@drawable/rounded_edittext"
+                android:drawableStart="@color/color_white"
+                android:drawablePadding="@dimen/_5sdp"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="@dimen/_8sdp"
+                android:singleLine="true"
+                android:textColorHint="@color/txtColor"
+                android:textSize="@dimen/font_normal"
+                app:setTypeFace="@string/font_regular"
+                tools:targetApi="o" />
+
+            <com.activityhub.utils.other.MyCustomButton
+                android:id="@+id/btnForgotPasswordActivitySendEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:background="@drawable/bg_button_blue_border"
+                android:text="@string/send_email"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textStyle="bold"
+                app:setTypeFace="@string/font_regular" />
+
+        </LinearLayout>
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:id="@+id/tvForgotPasswordActivityTermsAndCondition"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="@string/terms_and_condition"
+            android:textColor="@color/color_white"
+            app:setTypeFace="@string/font_light" />
+
+    </RelativeLayout>
+
+</ScrollView>

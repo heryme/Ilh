@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@drawable/ic_splash"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_35sdp"
+        tools:ignore="RtlSymmetry">
+
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_svg_white_calendar" />
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:text="@string/calender"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal"
+            app:setTypeFace="@string/font_regular" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/_8sdp">
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:id="@+id/tvMonthTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_44sdp"
+            android:layout_weight="4"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            app:setTypeFace="@string/font_semibold"
+            tools:text="April 2019" />
+
+        <ImageView
+            android:id="@+id/image_collapse_calender"
+            style="@style/square_selector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_down_arrow_grey" />
+
+    </LinearLayout>
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:mcv_showOtherDates="defaults"
+        app:layout_behavior="@string/calendar_behavior"
+        app:mcv_calendarMode="month"
+        app:mcv_selectionMode="single" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FDFDFD"
+        android:visibility="gone"
+        app:layout_behavior="@string/calendar_scrolling_behavior" />
+
+    <include
+        layout="@layout/item_not_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--  <com.activityhub.utils.other.MyCustomTextView
+          android:id="@+id/itemNotFound"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:gravity="center"
+          android:visibility="gone"
+          app:setTypeFace="@string/font_semibold"
+          android:text="Event not found"/>-->
+
+    <!--<com.southernbox.nestedcalendar.view.WeekTitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fafafa" />-->
+
+</LinearLayout>
+

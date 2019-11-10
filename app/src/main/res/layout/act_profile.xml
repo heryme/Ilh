@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_splash"
+    android:orientation="vertical"
+    tools:context="com.activityhub.activity.auth.Act_Profile">
+
+
+    <com.activityhub.utils.other.MyCustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:gravity="center"
+        android:text="@string/your_profile"
+        android:textColor="@color/yourProfileTxt"
+        android:textSize="@dimen/font_size_16"
+        app:setTypeFace="@string/font_regular" />
+
+    <com.activityhub.utils.other.MyCustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:gravity="center"
+        android:text="@string/your_profile_second"
+        android:textColor="@color/yourProfileTxt"
+        android:textSize="@dimen/font_size_14"
+        app:setTypeFace="@string/font_regular" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbarSize="0dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/llYourProfileCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.activityhub.utils.other.MyCustomTextView
+                        android:id="@+id/tvActivityYourProfileCondition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/condition"
+                        android:textColor="@color/yourProfileTxt"
+                        android:textSize="@dimen/font_size_15_"
+                        app:setTypeFace="@string/font_regular" />
+
+                    <ImageView
+                        android:id="@+id/imYourProfileRightArrowCondition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/ic_right_arrow" />
+
+                </LinearLayout>
+
+                <com.libaml.android.view.chip.ChipLayout
+                    android:id="@+id/acYourProfileActivityCondition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/rounded_textview"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:focusedByDefault="true"
+                    android:hint="@string/enter_condition"
+                    android:minHeight="@dimen/_35sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:visibility="gone"
+                    tools:targetApi="o" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_white" />
+
+            <!--date of birth-->
+
+            <LinearLayout
+                android:id="@+id/llYourProfileDateofBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.activityhub.utils.other.MyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/date_of_birth"
+                        android:textColor="@color/yourProfileTxt"
+                        android:textSize="@dimen/font_size_15_"
+                        app:setTypeFace="@string/font_regular" />
+
+                    <ImageView
+                        android:id="@+id/imYourProfileRightArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/ic_right_arrow" />
+
+                </LinearLayout>
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:id="@+id/tvYourProfileDateOfBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/rounded_textview"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone"
+                    app:setTypeFace="@string/font_regular" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_white" />
+
+            <LinearLayout
+                android:id="@+id/llYourProfileGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.activityhub.utils.other.MyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/sex"
+                        android:textColor="@color/yourProfileTxt"
+                        android:textSize="@dimen/font_size_15_"
+                        app:setTypeFace="@string/font_regular" />
+
+                    <ImageView
+                        android:id="@+id/imYourProfileRightArrowSex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/ic_right_arrow" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llYourProfileSpinnerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="3.2"
+                        tools:ignore="UselessParent">
+
+                        <RadioButton
+                            android:id="@+id/radio_button_male"
+                            style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:buttonTint="@color/white"
+                            android:maxLines="1"
+                            android:padding="@dimen/_2sdp"
+                            android:text="@string/male"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/font_size_15_" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button_female"
+                            style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.9"
+                            android:buttonTint="@color/white"
+                            android:maxLines="1"
+                            android:padding="@dimen/_2sdp"
+                            android:text="@string/female"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/font_size_15_" />
+
+                        <RadioButton
+                            android:id="@+id/radio_button_other"
+                            style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.3"
+                            android:buttonTint="@color/white"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:padding="@dimen/_2sdp"
+                            android:text="@string/other"
+                            android:textColor="@color/White"
+                            android:textSize="@dimen/font_size_15_" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/color_white" />
+
+            <!--height-->
+
+            <LinearLayout
+                android:id="@+id/llYourProfileHight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.activityhub.utils.other.MyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/height"
+                        android:textColor="@color/yourProfileTxt"
+                        android:textSize="@dimen/font_size_15_"
+                        app:setTypeFace="@string/font_regular" />
+
+                    <ImageView
+                        android:id="@+id/imYourProfileRightArrowHight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/ic_right_arrow" />
+
+                </LinearLayout>
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:id="@+id/etYourProfileActivityHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/rounded_textview"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone"
+                    app:setTypeFace="@string/font_regular" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_white" />
+
+            <!--Activity Level-->
+
+            <LinearLayout
+                android:id="@+id/llYourProfileActivityLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <com.activityhub.utils.other.MyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/activity_level"
+                        android:textColor="@color/yourProfileTxt"
+                        android:textSize="@dimen/font_size_15_"
+                        app:setTypeFace="@string/font_regular" />
+
+                    <ImageView
+                        android:id="@+id/imYourProfileRightArrowActivityLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/ic_right_arrow"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+                <RadioGroup
+                    android:id="@+id/rgYourProfileActivityLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <RadioButton
+                        android:id="@+id/rbYourProfileActivityLevelLight"
+                        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffff"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/light"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/font_size_15_" />
+
+                    <RadioButton
+                        android:id="@+id/rbYourProfileActivityLevelModerate"
+                        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffff"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/moderate"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/font_size_15_" />
+
+                    <RadioButton
+                        android:id="@+id/rbYourProfileActivityLevelHigh"
+                        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffff"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/high"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/font_size_15_" />
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_white" />
+
+            <!--wight-->
+            <LinearLayout
+                android:id="@+id/llYourProfileWight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.activityhub.utils.other.MyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/weight"
+                        android:textColor="@color/yourProfileTxt"
+                        android:textSize="@dimen/font_size_15_"
+                        app:setTypeFace="@string/font_regular" />
+
+                    <ImageView
+                        android:id="@+id/imYourProfileweight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/ic_right_arrow" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llYourProfileWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <com.activityhub.utils.other.MyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:text="@string/current_weight"
+                        android:textColor="@color/yourProfileTxt"
+                        android:textSize="@dimen/font_size_15"
+                        app:setTypeFace="@string/font_regular" />
+
+                    <com.activityhub.utils.other.MyCustomTextView
+                        android:id="@+id/etYourProfileActivityCurrentWeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:background="@drawable/rounded_textview"
+                        android:inputType="numberDecimal"
+                        android:padding="@dimen/_10sdp"
+                        android:visibility="visible"
+                        app:setTypeFace="@string/font_regular" />
+
+
+                    <com.activityhub.utils.other.MyCustomTextView
+                        android:id="@+id/tvYourProfileActivityUpdateWeightLable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:text="Update weight"
+                        android:textColor="@color/yourProfileTxt"
+                        android:textSize="@dimen/font_size_15"
+                        android:visibility="visible"
+                        app:setTypeFace="@string/font_regular" />
+
+                    <com.activityhub.utils.other.MyCustomTextView
+                        android:id="@+id/etYourProfileActivityUpdateWeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/rounded_textview"
+                        android:inputType="numberDecimal"
+                        android:padding="@dimen/_10sdp"
+                        android:visibility="visible"
+                        app:setTypeFace="@string/font_regular" />
+
+                    <com.activityhub.utils.other.MyCustomTextView
+                        android:id="@+id/tvYourProfileActivityYourProgress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:text="Your progress"
+                        android:textColor="@color/yourProfileTxt"
+                        android:textSize="@dimen/font_size_15"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/llYourProfileActivityGraph"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:background="@drawable/rounded_graph"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_3sdp">
+
+                        <com.activityhub.utils.other.MyCustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="@string/this_year"
+                            android:textColor="@color/black"
+                            app:setTypeFace="@string/font_regular" />
+
+                        <com.jjoe64.graphview.GraphView
+                            android:id="@+id/graph"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_80sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp" />
+                    </LinearLayout>
+
+                    <com.activityhub.utils.other.MyCustomEdittext
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/rounded_textview"
+                        android:padding="@dimen/_10sdp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_white" />
+
+
+            <!--interests-->
+            <LinearLayout
+                android:id="@+id/llYourProfileInterests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.activityhub.utils.other.MyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/interests"
+                        android:textColor="@color/yourProfileTxt"
+                        android:textSize="@dimen/font_size_15_"
+                        app:setTypeFace="@string/font_regular" />
+
+                    <ImageView
+                        android:id="@+id/imYourProfileinterests"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/ic_right_arrow" />
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvYourProfileinterests"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_white" />
+
+            <!--result survey Level-->
+            <LinearLayout
+                android:id="@+id/llYourProfileResultsSurvey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.activityhub.utils.other.MyCustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/result_survey"
+                        android:textColor="@color/yourProfileTxt"
+                        android:textSize="@dimen/font_size_15_"
+                        app:setTypeFace="@string/font_regular" />
+
+                    <ImageView
+                        android:id="@+id/imYourProfileRightArrowResultSurvey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/ic_right_arrow" />
+
+                </LinearLayout>
+
+
+                <RadioGroup
+                    android:id="@+id/rgYourProfileResultSurvey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/rbYourProfileResultSurveyDaily"
+                        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffff"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/daily"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/font_size_15_" />
+
+                    <RadioButton
+                        android:id="@+id/rbYourProfileResultSurveyWeekly"
+                        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffff"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/weekly"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/font_size_15_" />
+
+                    <RadioButton
+                        android:id="@+id/rbYourProfileResultSurveyMonthly"
+                        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#ffffff"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/monthly"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/font_size_15_" />
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewLineResultSurvey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_white"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/llYourProfileActivitySkipUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:id="@+id/btnYourProfileActivitySkip"
+                    style="@style/circle_selector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/_40sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="@string/skip"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:setTypeFace="@string/font_regular"
+                    tools:ignore="RtlSymmetry" />
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:id="@+id/btnYourProfileActivityUpdate"
+                    style="@style/circle_selector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_40sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="@string/update"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:setTypeFace="@string/font_regular"
+                    tools:ignore="RtlSymmetry" />
+
+
+            </LinearLayout>
+
+            <com.activityhub.utils.other.MyCustomButton
+                android:id="@+id/btnYourProfileActivitySubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/bg_button_your_profile"
+                android:text="@string/update"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:setTypeFace="@string/font_regular" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

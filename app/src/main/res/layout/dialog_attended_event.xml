@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:padding="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/white_alpha_80"
+        app:cardCornerRadius="@dimen/_10sdp"
+        card_view:cardCornerRadius="@dimen/_15sdp"
+        card_view:cardElevation="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_7sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:background="@drawable/dialog_calander_event_circle"
+                    android:contentDescription="@string/todo"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_svg_white_calendar" />
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text="@string/calendar_event"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/text_event_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small"
+                app:setTypeFace="@string/font_semibold"
+                tools:text="Did you enjoy the local walking group?" />
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tap_star_message"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small" />
+
+            <com.willy.ratingbar.ScaleRatingBar xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ratingbar_event"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                app:srb_drawableEmpty="@drawable/ic_star_grey"
+                app:srb_drawableFilled="@drawable/ic_star_blue"
+                app:srb_numStars="5"
+                app:srb_rating="0"
+                app:srb_scrollable="true"
+                app:srb_starHeight="@dimen/_20sdp"
+                app:srb_starPadding="2dp"
+                app:srb_starWidth="@dimen/_20sdp"
+                app:srb_stepSize="0.5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_15sdp"
+                android:weightSum="4">
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:id="@+id/text_submit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+
+                    android:background="@drawable/bg_button_dialog_calendar_event"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_extra_small"
+                    app:setTypeFace="@string/font_regular" />
+
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:id="@+id/text_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:layout_weight="1.1"
+                    android:background="@drawable/bg_button_dialog_calendar_event"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_extra_small"
+                    app:setTypeFace="@string/font_regular" />
+
+
+                <com.activityhub.utils.other.MyCustomTextView
+                    android:id="@+id/text_did_not_attend"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.8"
+                    android:background="@drawable/bg_button_dialog_calendar_event_green"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/did_not_attend"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_extra_small"
+                    app:setTypeFace="@string/font_regular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

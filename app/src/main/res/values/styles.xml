@@ -1,0 +1,113 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>-->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="MainTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBarTranparant" parent="MainTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- Full Screen For Splash -->
+    <style name="AppTheme.Fullscreen.Splash">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <!-- Show Statusbar-->
+    <style name="AppTheme.Fullscreen">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <!-- Navigation Drawer-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:actionButtonStyle">@style/myActionButtonStyle</item>
+        <item name="actionButtonStyle">@style/myActionButtonStyle</item>
+    </style>
+
+    <!-- Change Toolbar Menu Icon  -->
+    <style name="myActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">20dp</item>
+        <item name="android:maxWidth">20dp</item>
+        <item name="android:height">@dimen/_40sdp</item>
+        <item name="android:width">@dimen/_60sdp</item>
+    </style>
+
+
+    <style name="Theme_Dialog" parent="android:Theme.Holo.Dialog">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+    </style>
+
+    <style name="animation_exit_down">
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <!-- Height Picker Dialog-->
+    <style name="DialogCustomTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@color/transparant</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <!-- <style name="RatingBarSmall" parent="android:Widget.DeviceDefault.Light.RatingBar.Indicator">
+         <item name="android:progressDrawable">@drawable/rating_bar</item>
+         <item name="android:minHeight">@dimen/rating_min_height</item>
+         <item name="android:maxHeight">@dimen/rating_min_width</item>
+     </style>-->
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#5C5C5C</item>
+        <item name="colorControlActivated">@color/btn_color</item>
+    </style>
+
+   <!-- <item name="rating_small" parent="?android:attr/ratingBarStyleSmall">
+        <item name="indeterminateOnly">false</item>
+        <item name="progressDrawable">@drawable/ratingbar_full</item>
+        <item name="indeterminateDrawable">@drawable/ratingbar_full</item>
+        <item name="minHeight">57dip</item>
+        <item name="maxHeight">57dip</item>
+        <item name="thumb">@null</item>
+        <item name="mirrorForRtl">true</item>
+    </item>-->
+
+
+    <!--<style name="foodRatingBar" parent="Widget.AppCompat.RatingBar.Small">-->
+        <!--<item name="android:progressDrawable">@drawable/food_rating_bar_full</item>-->
+    <!--</style>-->
+
+
+</resources>

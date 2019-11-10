@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/layout_education"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_splash"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_35sdp"
+        tools:ignore="RtlSymmetry,UselessParent">
+
+
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_svg_white_calendar" />
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:text="@string/education"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_large"
+            app:setTypeFace="@string/font_regular" />
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_category_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_education"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:overScrollMode="never"
+        android:scrollbarSize="0dp"
+        android:scrollbars="none"
+        tools:listitem="@layout/item_category_video_list" />
+
+</RelativeLayout>

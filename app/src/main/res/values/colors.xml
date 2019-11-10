@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F4F2F2</color>
+    <color name="colorPrimaryDark">#F4F2F2</color>
+    <color name="colorAccent">#176E60</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+    <color name="btn_color">#51C3B5</color>
+    <color name="light_blue">#51C3B5</color>
+    <color name="dark_blue">#145B51</color>
+    <color name="wyn_green">#1FA38F</color>
+    <color name="wyn_btn_blue">#1FA38F</color>
+    <color name="txtColor">#797979</color>
+    <color name="white_ripple">#C1F3EDED</color>
+    <color name="wyn_grey">#C9C9C9</color>
+    <color name="light_grey">#DFDFDF</color>
+    <color name="dark_grey">#494949</color>
+    <color name="wyn_blue">#1c72cd</color>
+    <color name="divider_color">#F2EFEF</color>
+    <color name="black_alpha_5">#0D000000</color>
+
+    <color name="event_title_color">#1fa38f</color>
+
+    <!-- Bottom Navigation  -->
+    <color name="bgBottomNavigation">#F5F4F3</color>
+    <color name="bgBottomNavigatio">#F5F4F3</color>
+
+    <color name="background">#FCFCFC</color>
+
+    <color name="yourProfileTxt">#DBEBEC</color>
+
+    <!-- Home Fragment -->
+    <color name="homeFrgClickBackground">#1FA38F</color>
+
+    <!-- Account Settings -->
+    <color name="colorAccSetting">#FCFCFC</color>
+    
+    <color name="colorTextMangeDevices">#BDBDBD</color>
+    
+    <color name="colorTextAccount">#b9b9b9</color>
+
+    <color name="colorClickEventDetails">#D7E6E4</color>
+
+    <color name="transparant">#00000000</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Black">#000000</color>
+
+    <color name="text_gray">#BFC1C3</color>
+    <color name="btn_blue">#315A94</color>
+    <color name="btn_red">#DC4A38</color>
+    <color name="gradient_start">#30aaff</color>
+    <color name="gradient_end">#2bd0fe</color>
+
+    <color name="grey">@color/black_alpha_80</color>
+    <color name="app_blue">#2BCBFF</color>
+    <color name="row_bg">#F2F2F2</color>
+    <color name="btn_yellow_round">#FFC132</color>
+
+    <color name="black_alpha_95">#F2000000</color>
+    <color name="black_alpha_50">#80000000</color>
+    <color name="black_alpha_80">#CC000000</color>
+    <color name="black_alpha_20">#33000000</color>
+    <color name="black_alpha_30">#4D000000</color>
+    <color name="black_alpha_10">#1A000000</color>
+    <color name="black_alpha_05">#0D000000</color>
+
+    <color name="white_alpha_25">#40FFFFFF</color>
+    <color name="white_alpha_10">#1AFFFFFF</color>
+    <color name="white_alpha_50">#80FFFFFF</color>
+    <color name="white_alpha_70">#CCFFFFFF</color>
+    <color name="white_alpha_80">#DCFFFFFF</color>
+    <color name="white_alpha_60">#BFFFFFFF</color>
+    <color name="white_alpha_40">#66FFFFFF</color>
+    <color name="white_alpha_35">#59FFFFFF</color>
+    <color name="white_alpha_30">#4DFFFFFF</color>
+
+    <drawable name="black_overlay">@color/black_alpha_50</drawable>
+    <drawable name="transparent_overlay">@color/transparant</drawable>
+
+    <color name="colorPrimaryAlpha">#66AE68E0</color>
+
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!--Light Color-->
+
+    <color name="primaryTitleColor">#D9000000</color>
+    <color name="primaryDescriptionColor">#8C000000</color>
+    <color name="primaryDateColor">#8C000000</color>
+    <color name="primaryBackgroundColor">#FAFAFA</color>
+    <color name="primaryCardBackgroundColor">#F5F5F5</color>
+
+    <!--Night Color-->
+    <color name="colorPrimaryNight">#212121</color>
+    <color name="colorPrimaryDarkNight">#000000</color>
+    <color name="colorAccentNight">#f44336</color>
+    <color name="primaryTitleColorNight">#FFFFFF</color>
+    <color name="primaryDescriptionColorNight">#B3FFFFFF</color>
+    <color name="primaryDateColorNight">#B3FFFFFF</color>
+    <color name="primaryBackgroundColorNight">#303030</color>
+    <color name="primaryCardBackgroundColorNight">#424242</color>
+    <color name="patient_list_background">#C695E9</color>
+
+</resources>

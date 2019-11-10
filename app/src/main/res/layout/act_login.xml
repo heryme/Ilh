@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_splash"
+    android:fillViewport="true"
+    android:id="@+id/layout_main"
+    tools:context=".activity.auth.Act_Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_activityhub_white" />
+
+            <com.activityhub.utils.other.MyCustomEdittext
+                android:id="@+id/etSignInActivityEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableStart="@color/color_white"
+                android:drawablePadding="@dimen/_5sdp"
+                android:hint="@string/email"
+                android:autofillHints="@string/email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="@dimen/_8sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/font_normal"
+                android:textColorHint="@color/txtColor"
+                app:setTypeFace="@string/font_regular"
+                tools:text="osm@yopmail.com"
+                tools:targetApi="o" />
+
+            <com.activityhub.utils.other.MyCustomEdittext
+                android:id="@+id/etSignInActivityPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableStart="@color/color_white"
+                android:drawablePadding="@dimen/_5sdp"
+                android:hint="@string/password"
+                android:autofillHints="@string/password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="@dimen/_8sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/font_normal"
+                android:textColorHint="@color/txtColor"
+                app:setTypeFace="@string/font_regular"
+                tools:text="123456"
+                tools:targetApi="o" />
+
+            <com.activityhub.utils.other.MyCustomCheckbox
+                android:id="@+id/chkSignInActivityRememberMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:buttonTint="@color/color_white"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/remember_me"
+                android:textColor="@color/color_white"
+                android:textColorHint="@color/color_white"
+                app:setTypeFace="@string/font_regular" />
+
+            <com.activityhub.utils.other.MyCustomButton
+                android:id="@+id/btnSignInActivitySignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:background="@drawable/bg_button_blue_border"
+                android:text="@string/sign_in"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textStyle="bold"
+                app:setTypeFace="@string/font_regular" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/tvSignInActivityNewUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:gravity="center"
+                android:singleLine="true"
+                style="@style/circle_selector"
+                android:text="@string/new_user"
+                android:textColor="@color/color_white"
+                app:setTypeFace="@string/font_semibold" />
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="|"
+                android:textColor="@color/color_white"
+                app:setTypeFace="@string/font_bold_italic" />
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/tvSignInActivityForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/circle_selector"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/forgot_password"
+                android:textColor="@color/color_white"
+                app:setTypeFace="@string/font_semibold" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

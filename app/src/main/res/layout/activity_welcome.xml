@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:background="@color/black"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpWelcomeActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/llWelcomeActivityDots"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dots_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_35sdp"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <com.activityhub.utils.other.MyCustomTextView
+        android:id="@+id/btnWelcomeActivityContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:padding="@dimen/_15sdp"
+        android:text="@string/cont"
+        style="@style/circle_selector"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:setTypeFace="@string/font_semibold"
+        tools:ignore="RelativeOverlap" />
+
+    <com.activityhub.utils.other.MyCustomTextView
+        android:id="@+id/btnWelcomeActivitySkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:padding="@dimen/_15sdp"
+        android:text="@string/skip"
+        style="@style/circle_selector"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:setTypeFace="@string/font_semibold" />
+
+</RelativeLayout>

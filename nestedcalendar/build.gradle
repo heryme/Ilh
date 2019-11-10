@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    api 'com.github.prolificinteractive:material-calendarview:2.0.0'
+}
+
+publish {
+    userOrg = 'southernbox'
+    groupId = 'com.southernbox'
+    artifactId = 'NestedCalendar'
+    publishVersion = '1.2.0'
+    website = 'https://github.com/SouthernBox/NestedCalendar'
+}

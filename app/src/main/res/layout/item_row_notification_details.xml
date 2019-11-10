@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMainNotificationDetailsAdapter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bg_white_square_border"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/_12sdp">
+
+    <ImageView
+        android:id="@+id/ivCheck"
+        android:layout_width="@dimen/_13sdp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_svg_check_mark_black"
+        android:tint="@color/btn_color" />
+
+    <com.activityhub.utils.other.MyCustomTextView
+        android:id="@+id/tvNotificationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/font_small"
+        app:setTypeFace="@string/font_regular"
+        tools:text="@string/repeat" />
+
+</LinearLayout>

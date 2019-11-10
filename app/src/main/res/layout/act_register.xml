@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_splash"
+    android:fillViewport="true"
+    android:id="@+id/layout_main"
+    tools:context=".activity.auth.Act_Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:id="@+id/btnSignUpActivityLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            style="@style/circle_selector"
+            android:gravity="end"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:text="@string/login"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/font_small"
+            app:setTypeFace="@string/font_light"
+            tools:ignore="RelativeOverlap" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ilhp_sign_up"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/font_title"
+                app:setTypeFace="@string/font_light" />
+
+            <com.activityhub.utils.other.MyCustomEdittext
+                android:id="@+id/etSignUpActivityName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableStart="@color/color_white"
+                android:drawablePadding="@dimen/_5sdp"
+                android:hint="@string/your_name"
+                android:inputType="text"
+                android:autofillHints="@string/name"
+                android:maxLines="1"
+                android:textSize="@dimen/font_normal"
+                android:padding="@dimen/_8sdp"
+                android:singleLine="true"
+                android:textColorHint="@color/txtColor"
+                app:setTypeFace="@string/font_regular" />
+
+            <com.activityhub.utils.other.MyCustomEdittext
+                android:id="@+id/etSignUpActivityEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableStart="@color/color_white"
+                android:drawablePadding="@dimen/_5sdp"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="@dimen/_8sdp"
+                android:autofillHints="@string/email"
+                android:textSize="@dimen/font_normal"
+                android:singleLine="true"
+                android:textColorHint="@color/txtColor"
+                app:setTypeFace="@string/font_regular" />
+
+            <com.activityhub.utils.other.MyCustomEdittext
+                android:id="@+id/etSignUpActivityConfirmEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableStart="@color/color_white"
+                android:drawablePadding="@dimen/_5sdp"
+                android:hint="@string/confirmEmailAddress"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="@dimen/_8sdp"
+                android:autofillHints="@string/email"
+                android:textSize="@dimen/font_normal"
+                android:singleLine="true"
+                android:textColorHint="@color/txtColor"
+                app:setTypeFace="@string/font_regular" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.activityhub.utils.other.MyCustomEdittext
+                    android:id="@+id/etSignUpActivityPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableStart="@color/color_white"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:autofillHints="@string/password"
+                    android:padding="@dimen/_8sdp"
+                    android:textSize="@dimen/font_normal"
+                    android:singleLine="true"
+                    android:textColorHint="@color/txtColor"
+                    app:setTypeFace="@string/font_regular" />
+
+                <ImageView
+                    android:id="@+id/image_password"
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_42sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_24sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_6sdp"
+                    android:src="@drawable/ic_eye_hide"
+                    android:contentDescription="@string/todo" />
+
+            </RelativeLayout>
+
+
+            <com.activityhub.utils.other.MyCustomButton
+                android:id="@+id/btnSignUpActivityCreateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:background="@drawable/bg_button_blue_border"
+                android:text="@string/create_ac"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textStyle="bold"
+                app:setTypeFace="@string/font_regular" />
+
+            <com.activityhub.utils.other.MyCustomTextView
+                android:id="@+id/tvSignUpActivityTermsAndCondition"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                style="@style/square_selector"
+                android:textSize="@dimen/_10ssp"
+                android:gravity="center"
+                android:text="@string/terms_and_condition"
+                android:textColor="@color/color_white"
+                app:setTypeFace="@string/font_light" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</ScrollView>

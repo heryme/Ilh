@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_square_border"
+    android:orientation="vertical"
+    android:padding="@dimen/_20sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:text="14"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16"
+            app:setTypeFace="@string/font_regular" />
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:id="@+id/tvEventTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="start"
+            android:padding="@dimen/_3sdp"
+            android:text="Athletics club jhfbjf b hfedbhjf hbxxaxxxxx fbh bhfd bhfjdb dfh jkdf jkdbhf jkfd "
+            android:textColor="@color/event_title_color"
+            android:textSize="@dimen/font_normal"
+            app:setTypeFace="@string/font_regular" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:id="@+id/tvDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:text="Tues"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_small"
+            app:setTypeFace="@string/font_regular" />
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="start"
+            android:text="2pm - 4pm "
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_small"
+            app:setTypeFace="@string/font_regular" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="@tools:sample/full_names" />
+
+    </FrameLayout>
+    -->

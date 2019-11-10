@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccSetting"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccSetting"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_35sdp"
+        android:paddingEnd="@dimen/_30sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:visibility="visible">
+
+        <com.activityhub.utils.other.MyCustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:drawableTint="@color/btn_color"
+            android:text="@string/update_email_address"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_small"
+            app:setTypeFace="@string/font_semibold"
+            tools:targetApi="m" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F5F2F2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.activityhub.utils.other.MyCustomEdittext
+                android:id="@+id/etUpdateEmailFragmentOldEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:background="@drawable/email_change_rounded_edittext"
+                android:drawableStart="@color/white"
+                android:gravity="start|center"
+                android:hint="@string/old_email_address"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/_10sdp"
+                android:text=""
+                android:textColor="#707070"
+                android:textColorHint="#707070"
+                android:textSize="@dimen/font_normal"
+                app:setTypeFace="@string/font_regular" />
+
+            <com.activityhub.utils.other.MyCustomEdittext
+                android:id="@+id/etUpdateEmailFragmentNewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:background="@drawable/email_change_rounded_edittext"
+                android:drawableStart="@color/white"
+                android:gravity="start|center"
+                android:hint="@string/new_email_address"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/_10sdp"
+
+                android:textColor="#707070"
+                android:textColorHint="#707070"
+                android:textSize="@dimen/font_normal"
+                app:setTypeFace="@string/font_regular" />
+
+            <com.activityhub.utils.other.MyCustomButton
+                android:id="@+id/btnUpdateEmailFragmentSaveChanges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_35sdp"
+                android:background="@drawable/bg_button_blue_square"
+                android:text="@string/save_changes"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textStyle="bold"
+                app:setTypeFace="@string/font_regular" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F5F2F2" />
+</LinearLayout>
